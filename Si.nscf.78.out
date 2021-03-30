@@ -1,7 +1,7 @@
 
 *************** JDFTx 1.6.0  ***************
 
-Start date and time: Tue Mar 30 19:44:24 2021
+Start date and time: Tue Mar 30 19:44:59 2021
 Executable jdftx with command-line: -i Si.nscf.in
 Running on hosts (process indices):  dhcp-10-31-205-151.dyn.mit.edu (0-3)
 Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)
@@ -18,11 +18,11 @@ core-overlap-check vector
 coulomb-interaction Periodic
 davidson-band-ratio 1.1
 dump End BandEigs Excitations
-dump-name bandstruct8.$VAR
+dump-name bandstruct78.$VAR
 elec-cutoff 50
 elec-eigen-algo Davidson
 elec-ex-corr gga-PBE
-elec-n-bands 8
+elec-n-bands 78
 electronic-minimize  \
 	dirUpdateScheme      FletcherReeves \
 	linminMethod         DirUpdateRecommended \
@@ -180,7 +180,7 @@ Folded 1 k-points by 1x1x1 to 1 k-points.
 No reducable k-points. 
 Computing the number of bands and number of electrons
 Calculating initial fillings.
-nElectrons:   8.000000   nBands: 8   nStates: 1
+nElectrons:   8.000000   nBands: 78   nStates: 1
 
 ----- Setting up reduced wavefunction bases (one per k-point) -----
 average nbasis = 4573.000 , ideal nbasis = 4563.647
@@ -193,6 +193,7 @@ Reciprocal space sum over 2197 terms with max indices [  6  6  6  ]
 ---------- Allocating electronic variables ----------
 Reading n from file 'totalE.n' ... done
 Initializing wave functions:  linear combination of atomic orbitals
+Note: number of bands (78) exceeds available atomic orbitals (8)
 
 
 ---- Citations for features of the code used in this run ----
@@ -212,14 +213,14 @@ Initializing wave functions:  linear combination of atomic orbitals
 This list may not be complete. Please suggest additional citations or
 report any other bugs at https://github.com/shankar1729/jdftx/issues
 
-Initialization completed successfully at t[s]:      1.33
+Initialization completed successfully at t[s]:      1.52
 
 
 ----------- Band structure minimization -------------
 Minimization will be done independently for each quantum number.
 Setting wave functions to eigenvectors of Hamiltonian
 
-Dumping 'bandstruct8.eigenvals' ... done
-Dumping 'bandstruct8.Excitations' ... done
-End date and time: Tue Mar 30 19:44:26 2021  (Duration: 0-0:00:01.96)
+Dumping 'bandstruct78.eigenvals' ... done
+Dumping 'bandstruct78.Excitations' ... done
+End date and time: Tue Mar 30 19:45:12 2021  (Duration: 0-0:00:12.11)
 Done!

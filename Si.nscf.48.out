@@ -1,9 +1,9 @@
 
 *************** JDFTx 1.6.0  ***************
 
-Start date and time: Tue Mar 30 18:51:11 2021
+Start date and time: Tue Mar 30 19:44:41 2021
 Executable jdftx with command-line: -i Si.nscf.in
-Running on hosts (process indices):  dhcp-10-31-205-151.dyn.MIT.EDU (0-3)
+Running on hosts (process indices):  dhcp-10-31-205-151.dyn.mit.edu (0-3)
 Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)
 Resource initialization completed at t[s]:      0.00
 Run totals: 4 processes, 8 threads, 0 GPUs
@@ -19,7 +19,7 @@ coulomb-interaction Periodic
 davidson-band-ratio 1.1
 dump End BandEigs Excitations
 dump-name bandstruct48.$VAR
-elec-cutoff 20 100
+elec-cutoff 50
 elec-eigen-algo Davidson
 elec-ex-corr gga-PBE
 elec-n-bands 48
@@ -141,21 +141,8 @@ G =
 [  -0.612217   0.612217   0.612217  ]
 [   0.612217  -0.612217   0.612217  ]
 [   0.612217   0.612217  -0.612217  ]
-Minimum fftbox size, Smin = [  36  36  36  ]
-Chosen fftbox size, S = [  36  36  36  ]
-
----------- Initializing tighter grid for wavefunction operations ----------
-R = 
-[            0       5.1315       5.1315  ]
-[       5.1315            0       5.1315  ]
-[       5.1315       5.1315            0  ]
-unit cell volume = 270.248
-G =
-[  -0.612217   0.612217   0.612217  ]
-[   0.612217  -0.612217   0.612217  ]
-[   0.612217   0.612217  -0.612217  ]
-Minimum fftbox size, Smin = [  32  32  32  ]
-Chosen fftbox size, S = [  32  32  32  ]
+Minimum fftbox size, Smin = [  48  48  48  ]
+Chosen fftbox size, S = [  48  48  48  ]
 
 ---------- Exchange Correlation functional ----------
 Initalized PBE GGA exchange.
@@ -178,11 +165,11 @@ Reading pseudopotential file '/Users/ali/Desktop/JDFTX/build-withlibxc/pseudopot
     l: 2  eig: -0.100000  rCut: 1.7
     l: 2  eig: 0.100000  rCut: 1.7
   Partial core density with radius 1.45
-  Transforming core density to a uniform radial grid of dG=0.02 with 1833 points.
-  Transforming local potential to a uniform radial grid of dG=0.02 with 1833 points.
-  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 432 points.
-  Transforming density augmentations to a uniform radial grid of dG=0.02 with 1833 points.
-  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 432 points.
+  Transforming core density to a uniform radial grid of dG=0.02 with 2442 points.
+  Transforming local potential to a uniform radial grid of dG=0.02 with 2442 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 680 points.
+  Transforming density augmentations to a uniform radial grid of dG=0.02 with 2442 points.
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 680 points.
   Core radius for overlap checks: 1.70 bohrs.
 
 Initialized 1 species with 2 total atoms.
@@ -196,7 +183,7 @@ Calculating initial fillings.
 nElectrons:   8.000000   nBands: 48   nStates: 1
 
 ----- Setting up reduced wavefunction bases (one per k-point) -----
-average nbasis = 1139.000 , ideal nbasis = 1154.521
+average nbasis = 4573.000 , ideal nbasis = 4563.647
 
 ---------- Setting up ewald sum ----------
 Optimum gaussian width for ewald sums = 2.330638 bohr.
@@ -226,7 +213,7 @@ Note: number of bands (48) exceeds available atomic orbitals (8)
 This list may not be complete. Please suggest additional citations or
 report any other bugs at https://github.com/shankar1729/jdftx/issues
 
-Initialization completed successfully at t[s]:      0.96
+Initialization completed successfully at t[s]:      1.38
 
 
 ----------- Band structure minimization -------------
@@ -235,5 +222,5 @@ Setting wave functions to eigenvectors of Hamiltonian
 
 Dumping 'bandstruct48.eigenvals' ... done
 Dumping 'bandstruct48.Excitations' ... done
-End date and time: Tue Mar 30 18:51:13 2021  (Duration: 0-0:00:01.93)
+End date and time: Tue Mar 30 19:44:46 2021  (Duration: 0-0:00:04.92)
 Done!
