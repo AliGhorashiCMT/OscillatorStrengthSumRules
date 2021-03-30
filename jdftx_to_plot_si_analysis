@@ -1,0 +1,50 @@
+using jdftx_to_plot
+
+print("hello")
+
+filenames = []
+#plot_bands("bandstruct.eigenvals", 40, 49)
+for filename in readdir()
+    if filename[end-5:end] == "ations"
+        l = length(filename[11:end])
+        parse(Int, filename[11:end][1:l-12])
+        numfilename = (parse(Int, filename[11:end][1:l-12]), filename)
+        push!(filenames, numfilename)
+    end
+end
+
+onlyfilenames = []
+
+for files in filenames 
+    push!(onlyfilenames, files[2])
+end
+
+sort!(filenames, by = x -> x[1])
+
+
+
+onlyfilenames=  "bandstruct8.Excitations"
+ ["bandstruct28.Excitations"
+ "bandstruct48.Excitations"
+ "bandstruct68.Excitations"
+ "bandstruct88.Excitations"
+ "bandstruct108.Excitations"
+ "bandstruct128.Excitations"
+ "bandstruct148.Excitations"
+ "bandstruct168.Excitations"
+ "bandstruct188.Excitations"
+ "bandstruct208.Excitations"
+ "bandstruct228.Excitations"
+ "bandstruct248.Excitations"
+ "bandstruct268.Excitations"
+ "bandstruct288.Excitations"
+ "bandstruct308.Excitations"
+ "bandstruct328.Excitations"
+ "bandstruct348.Excitations"
+ "bandstruct368.Excitations"
+ "bandstruct388.Excitations"
+ "bandstruct408.Excitations"
+ "bandstruct428.Excitations"
+ "bandstruct448.Excitations"
+ "bandstruct468.Excitations"
+ "bandstruct488.Excitations"]

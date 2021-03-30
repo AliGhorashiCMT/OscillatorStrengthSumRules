@@ -1,0 +1,10 @@
+0   libjdftx.dylib                      0x0000000107c22ff4 _Z10printStackb + 68
+1   libjdftx.dylib                      0x0000000107c209c2 _Z14stackTraceExiti + 18
+2   libjdftx.dylib                      0x0000000107c2caf5 _Z3powRK6matrixdPS_P10diagMatrixPb + 917
+3   libjdftx.dylib                      0x0000000107c2d056 _Z7invsqrtRK6matrixPS_P10diagMatrixPb + 22
+4   libjdftx.dylib                      0x0000000107d0217d _ZN8ElecVars14orthonormalizeEiP6matrix + 269
+5   libjdftx.dylib                      0x0000000107d0343f _ZN8ElecVars4LCAOEv + 703
+6   libjdftx.dylib                      0x0000000107cfb16f _ZN8ElecVars5setupERK10Everything + 7839
+7   libjdftx.dylib                      0x0000000107d23407 _ZN10Everything5setupEv + 3991
+8   jdftx                               0x0000000107a4ff06 main + 406
+9   libdyld.dylib                       0x00007fff20605621 start + 1

@@ -1,0 +1,16 @@
+lattice face-centered Cubic 10.263
+ion-species GBRV/$ID_pbe.uspp
+#elec-cutoff 20 100
+#elec-cutoff 10
+elec-cutoff 50
+ion Si 0.00 0.00 0.00  0
+ion Si 0.25 0.25 0.25  0
+converge-empty-states yes
+#include bandstruct.kpoints         #Get kpoints along high-symmetry path created above
+fix-electron-density totalE.$VAR   #Fix the electron density (not self-consistent)
+elec-n-bands ${bands}
+#elec-n-bands 10                    #Number of bands to solve for
+dump End BandEigs Excitations                  #Output the band eigenvalues for plotting
+dump-name ${varname}.$VAR          #This prefix should match the final paramater given to bandstructKpoints
+
+

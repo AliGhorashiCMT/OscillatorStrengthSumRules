@@ -1,0 +1,23 @@
+lattice face-centered Cubic 10.263
+ion-species GBRV/$ID_pbe.uspp
+#elec-cutoff 20 100
+#elec-cutoff 5
+elec-cutoff 50
+ion Si 0.00 0.00 0.00  0
+ion Si 0.25 0.25 0.25  0
+
+elec-n-bands 100
+#elec-n-bands 100
+#elec-n-bands 400
+#elec-n-bands 50
+
+converge-empty-states yes
+
+#include common.in
+kpoint-folding 8 8 8    #Use a Brillouin zone mesh
+electronic-SCF          #Perform a Self-Consistent Field optimization
+dump-name totalE.$VAR
+dump End State BandEigs #State and band eigenvalues
+dump End ElecDensity    #Save the self-consistent electron density
+dump End EigStats       #Get eigenvalue statistics
+
